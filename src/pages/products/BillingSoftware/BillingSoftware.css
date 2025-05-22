@@ -1,0 +1,22 @@
+.product-details-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  min-height: 100vh;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
+  color: white;
+}
+
+/* Copy other necessary styles from SchoolManagement.css */
+/* ...existing styles... */
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+  /* ...responsive styles... */
+}

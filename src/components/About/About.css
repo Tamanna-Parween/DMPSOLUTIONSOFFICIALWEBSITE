@@ -1,0 +1,85 @@
+.about-section {
+  padding: 4rem 2rem;
+  background-color: white;
+  color: #333;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.about-intro {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.services-overview {
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-overview h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 2rem;
+}
+
+/* Add these styles to your existing About.css */
+
+.mission-vision-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.mission-box,
+.vision-box {
+  padding: 2rem;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.mission-box:hover,
+.vision-box:hover {
+  transform: translateY(-5px);
+}
+
+.mission-box h3,
+.vision-box h3 {
+  color: #ff6b00;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.mission-box p,
+.vision-box p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.mission-box {
+  border-left: 4px solid #ff6b00;
+}
+
+.vision-box {
+  border-left: 4px solid #0088ff;
+}
+
+@media (max-width: 768px) {
+  .mission-vision-container {
+    grid-template-columns: 1fr;
+  }
+}
