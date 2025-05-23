@@ -11,6 +11,10 @@ import SchoolManagement from './pages/products/SchoolManagement/SchoolManagement
 import MobileApp from './pages/products/MobileApplication/MobileApp';
 import BillingSoftware from './pages/products/BillingSoftware/BillingSoftware';
 import ERPSolutions from './pages/ERPSolutions/ERPSolutions';
+import CustomSoftware from './pages/CustomSoftware/CustomSoftware';
+import CRMSolutions from './pages/CRM/CRMSolutions';
+import POSSolutions from './pages/POS/POSSolutions';
+import MobileAppDevelopment from './pages/MobileApp/MobileAppDevelopment';
 
 function App() {
   return (
@@ -32,6 +36,10 @@ function App() {
             <Route path="/products/school" element={<SchoolManagement />} />
             <Route path="/products/mobile" element={<MobileApp />} />
             <Route path="/products/billing" element={<BillingSoftware />} />
+            <Route path="/services/custom-software" element={<CustomSoftware />} />
+            <Route path="/services/crm" element={<CRMSolutions />} />
+            <Route path="/services/pos" element={<POSSolutions />} />
+            <Route path="/services/mobile" element={<MobileAppDevelopment />} />
           </Routes>
         </main>
         <footer className="footer">
