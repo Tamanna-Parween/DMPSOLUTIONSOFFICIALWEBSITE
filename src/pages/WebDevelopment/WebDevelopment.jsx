@@ -39,41 +39,40 @@ const WebDevelopment = () => {
 
   const services = [
     {
-      title: 'Enterprise Web Solutions',
-      description: 'End-to-end web solutions engineered for large-scale enterprises, featuring robust architecture and seamless integration capabilities.',
-      icon: 'fas fa-building',
-      benefits: ['Scalable Architecture', 'Enterprise Integration', 'High Availability']
+      title: 'Custom Website Development',
+      description: 'From simple static websites to complex web applications, we build custom solutions tailored to your specific needs and goals',
+      icon: 'fas fa-code'
     },
     {
-      title: 'Digital Transformation',
-      description: 'Strategic digital transformation services helping enterprises modernize their legacy systems and embrace cutting-edge technologies.',
-      icon: 'fas fa-digital-tachograph',
-      benefits: ['Legacy Modernization', 'Cloud Migration', 'Process Automation']
+      title: 'E-commerce Development',
+      description: 'Launch a powerful online store with features like product catalogs, secure payment gateways, inventory management, and more.',
+      icon: 'fas fa-shopping-cart'
     },
     {
-      title: 'Cloud-Native Development',
-      description: 'Cloud-first application development leveraging microservices architecture and containerization for maximum flexibility.',
-      icon: 'fas fa-cloud',
-      benefits: ['Microservices', 'Containerization', 'Auto-scaling']
+      title: 'Web Application Development',
+      description: 'Develop robust, dynamic, and scalable web applications using the latest technologies and frameworks.',
+      icon: 'fas fa-window-restore'
     },
     {
-      title: 'Enterprise E-commerce',
-      description: 'Sophisticated e-commerce solutions designed for high-volume transactions and complex business logic implementation.',
-      icon: 'fas fa-shopping-cart',
-      benefits: ['Multi-region Support', 'Advanced Analytics', 'ERP Integration']
+      title: 'Responsive Web Design',
+      description: 'Ensure your website looks great and functions seamlessly on all devices, from desktops to smartphones.',
+      icon: 'fas fa-mobile-alt'
     },
     {
-      title: 'API & Integration Services',
-      description: 'Custom API development and enterprise system integration services ensuring seamless connectivity across your business ecosystem.',
-      icon: 'fas fa-plug',
-      benefits: ['REST/SOAP APIs', 'ESB Integration', 'API Gateway']
+      title: 'API Development & Integration',
+      description: 'Enhance your website\'s functionality with custom APIs and integrations for third-party services.',
+      icon: 'fas fa-plug'
     },
     {
-      title: 'Digital Experience Platforms',
-      description: 'Modern digital experience platforms that deliver personalized, omnichannel experiences at enterprise scale.',
-      icon: 'fas fa-desktop',
-      benefits: ['Omnichannel UX', 'AI-Powered', 'Analytics Dashboard']
-    }
+      title: 'Progressive Web Apps (PWA)',
+      description: 'Combine the best of web and mobile apps to create fast, reliable, and engaging user experiences.',
+      icon: 'fas fa-rocket'
+    },
+    // {
+    //   title: 'Maintenance & Support',
+    //   description: 'Keep your website up-to-date, secure, and performing optimally with our ongoing maintenance and support services.',
+    //   icon: 'fas fa-tools'
+    // }
   ];
 
   return (
@@ -116,21 +115,13 @@ const WebDevelopment = () => {
 
       <section className="detailed-services">
         <div className="container">
-          <div className="section-header">
-            <h2>Enterprise Solutions</h2>
-            <p className="section-subtitle">Comprehensive web solutions for enterprise-scale operations</p>
-          </div>
+          <h2 className="section-header">We Offer</h2>
           <div className="services-grid">
             {services.map((service) => (
               <div className="service-card" key={service.title}>
                 <i className={service.icon}></i>
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
-                <div className="benefits">
-                  {service.benefits.map((benefit, index) => (
-                    <span key={index} className="benefit-tag">{benefit}</span>
-                  ))}
-                </div>
               </div>
             ))}
           </div>
