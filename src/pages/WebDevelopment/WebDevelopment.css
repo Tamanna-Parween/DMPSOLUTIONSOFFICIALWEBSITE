@@ -1,125 +1,17 @@
 .web-development {
-  padding-top: 0; /* Remove top padding */
+  padding-top: 80px;
 }
 
 .hero-section {
-  position: relative;
-  min-height: 80vh;
-  background: linear-gradient(135deg, #0a1f3c 0%, #1a4f9c 50%, #0052cc 100%) !important; /* Added !important to override any conflicting styles */
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #ff6b00 0%, #0088ff 100%);
   color: white;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  z-index: 0; /* Adjusted z-index */
-  margin-top: 0; /* Remove top margin */
-  padding: 0; /* Remove padding */
-}
-
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  z-index: 0; /* Ensure the pattern is behind the content */
-  opacity: 0.1; /* Reduced opacity for better visibility */
-}
-
-.hero-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-
-.hero-content {
-  text-align: left;
-}
-
-.hero-tag {
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  font-size: 0.9rem;
-  margin-bottom: 1.5rem;
-  backdrop-filter: blur(5px);
 }
 
 .hero-section h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-  background: linear-gradient(to right, #fff, #e0e0e0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.hero-description {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  color: rgba(255, 255, 255, 0.9);
-  max-width: 600px;
-}
-
-.hero-stats {
-  display: flex;
-  gap: 3rem;
-  margin-top: 3rem;
-}
-
-.stat-item {
-  text-align: left;
-}
-
-.stat-value {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #00a0dc;
-  margin-bottom: 0.5rem;
-}
-
-.stat-label {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 1rem;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 1rem;
-}
-
-.hero-btn {
-  padding: 1rem 2rem;
-  border-radius: 4px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  font-size: 1rem;
-}
-
-.hero-btn.primary {
-  background: #00a0dc;
-  color: white;
-  border: none;
-}
-
-.hero-btn.secondary {
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  color: white;
-}
-
-.hero-btn:hover {
-  transform: translateY(-2px);
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .tech-stack, .services-section, .workspace {
@@ -175,76 +67,23 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  padding: 2rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-.service-card {
-  position: relative;
-  background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
+.service-item {
   padding: 2rem;
-  transition: all 0.3s ease;
-  overflow: hidden;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  border-color: var(--primary-color);
-}
-
-.service-card i {
+.service-item i {
   font-size: 2.5rem;
-  color: var(--primary-color);
-  margin-bottom: 1.5rem;
-}
-
-.service-card h3 {
-  font-size: 1.5rem;
-  color: #2c3e50;
+  color: #0088ff;
   margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.service-card p {
-  color: #64748b;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-}
-
-.service-card .benefits {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-
-.service-card .benefit-tag {
-  font-size: 0.8rem;
-  padding: 0.25rem 0.75rem;
-  background: rgba(0, 102, 204, 0.1);
-  color: var(--primary-color);
-  border-radius: 20px;
-  font-weight: 500;
-}
-
-.service-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: var(--primary-color);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.service-card:hover::before {
-  opacity: 1;
 }
 
 .workspace-content {
@@ -461,8 +300,6 @@ section:not(:last-child) {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
-  position: relative;
-  z-index: 2; /* Ensure content is above the background pattern */
 }
 
 @media (max-width: 768px) {
